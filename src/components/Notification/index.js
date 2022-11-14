@@ -4,13 +4,11 @@ import './index.css'
 const Notification = props => {
   const {children} = props
   return (
-    <li className="item-container">
-      {children[0]}
-      <div className="item-details">
-        {children[1]}
-        {children[2]}
+    <li>
+      <div className="item-container">
+        {children}
+        <GrFormClose />
       </div>
-      <GrFormClose />
     </li>
   )
 }
